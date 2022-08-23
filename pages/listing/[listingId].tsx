@@ -20,15 +20,13 @@ import { MdRefresh } from 'react-icons/md'
 import { RiShareBoxLine } from 'react-icons/ri'
 import { FiMoreVertical } from 'react-icons/fi'
 import { GiShare } from 'react-icons/gi'
-
-
+import styles from "../../styles/Home.module.css";
 const style = {
 wrapper: `flex flex-col items-center container-lg text-[#9B072E]`,
 container: `container p-10`,
 topContent: `flex`,
 nftImgContainer: `flex-10 mr-4`,
 detailsContainer: `flex-[2] ml-4`,
-
 infoContainer: `h-36 flex flex-col flex-1 justify-between mb-6`,
 accent: `text-[#9B072E]`,
 nftTitle: `text-3xl font-extrabold`,
@@ -133,11 +131,23 @@ const ListingPage: NextPage = () => {
   }
 
   return (
-    <div className={style.wrapper}>
-      
-  <Header/>
-  <div style={{ marginTop: 90, marginBottom: 50 }}></div>
-  
+    <div  className={style.wraper}>
+       
+    <Header/>
+    
+    
+    <div className={styles.bg1}>
+     
+       <div className={styles.container}>
+       <h1 className={styles.h2}>Qatar2022</h1>
+       <p className={styles.explain}>
+       
+World Cup 2022 Tickets
+          
+       </p>
+       </div></div>
+     <div style={{ marginTop: 32, marginBottom: 32 }}>
+      </div>
        <div className={style.container}> 
         <div className={style.topContent}>
           <div className={style.nftImgContainer}>

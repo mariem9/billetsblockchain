@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
-
+import Link from "next/link";
 import Header from "../components/Header"
-
 
 import {
   MediaRenderer,
@@ -42,16 +41,25 @@ const NFT: NextPage = () => {
        
     <Header/>
     
-    <div className={styles.container}>
+    
+      <div className={styles.bg1}>
+     
        <div style={{ marginTop: 150, marginBottom: 50 }}>
+       <div className={styles.container}>
        <h1 className={styles.h2}>Qatar2022</h1>
        <p className={styles.explain}>
        
 World Cup 2022 Tickets
           
        </p>
-       </div>
-
+       </div></div></div>
+       <div style={{ marginTop: 32, marginBottom: 32 }}>
+          <Link href="/create">
+            <a className={styles.mainButton} style={{ textDecoration: "none" }}>
+              Add A Ticket
+            </a>
+          </Link>
+        
        <div className="main">
          {
             loadingListings ? (

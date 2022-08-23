@@ -47,6 +47,15 @@
   width: 100vw;
   padding: 0 24px;
   color: #9B072E ;
+  
+}
+.bg1 {
+  
+  background-image: url("../assets/emblème-de-coupe-du-monde-qatar-avec-le-drapeau-et-ballon-football-symbole-manifestation-sportive-151418060.jpg");
+  background-size: 1000px;
+  width: 1500px;
+  height: 500px;
+  
 }
 
 .page {
@@ -150,6 +159,7 @@
   width: 180px;
   text-align: center;
   border-radius: 9999px;
+  
 }
 
 .mainButton:hover {
@@ -196,7 +206,7 @@
   
 }
 .h2 {
-color: #9B072E ;
+color: black;
 font-size: 6rem ;
 position: center;
 }
@@ -207,7 +217,8 @@ position: center;
 }
 .explain {
   font-size: 6rem;
-  color: #9B072E ;
+  color:black;
+  position: center;
 }
 
 .nameContainer {
@@ -243,7 +254,7 @@ position: center;
   background-color: transparent;
   border: 1px solid grey;
   border-radius: 8px;
-  color: #fff;
+  color: black ;
   height: 48px;
   padding: 0 16px;
   font-size: 1rem;
