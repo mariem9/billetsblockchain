@@ -4,7 +4,7 @@ import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import Head from "next/head";
 import ThirdwebGuideFooter from "../components/ThirdwebGuideFooter";
-import Header from "../components/Header";
+import Header1 from "../components/Header1";
 const activeChainId = ChainId.Rinkeby;
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Thirdweb, Marketplace, NFT Marketplace Tutorial, NFT Auction Tutorial, How To Make OpenSea"
         />
       </Head>
-      <Header />
+      <Header1 />
       <Component {...pageProps} />
       <ThirdwebGuideFooter />
     </ThirdwebProvider>

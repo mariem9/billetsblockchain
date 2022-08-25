@@ -4,7 +4,7 @@ import {
   useNetwork,
   useNetworkMismatch,
 } from "@thirdweb-dev/react";
-import Header from "../../components/Header";
+import Header1 from "../../components/Header1";
 import {
   AuctionListing,
   ChainId,
@@ -22,6 +22,7 @@ import { FiMoreVertical } from 'react-icons/fi'
 import { GiShare } from 'react-icons/gi'
 import styles from "../../styles/Home.module.css";
 const style = {
+  wraper :'flex flex-col items-center container-lg text-[#9B072E]',
 wrapper: `flex flex-col items-center container-lg text-[#9B072E]`,
 container: `container p-10`,
 topContent: `flex`,
@@ -132,22 +133,15 @@ const ListingPage: NextPage = () => {
 
   return (
     <div  className={style.wraper}>
-       
-    <Header/>
-    
-    
     <div className={styles.bg1}>
-     
-       <div className={styles.container}>
-       <h1 className={styles.h2}>Qatar2022</h1>
-       <p className={styles.explain}>
-       
+    
+     <div className={styles.container}>
+     <h1 className={styles.h2}>Qatar2022</h1>
+     <p className={styles.explain}>  
 World Cup 2022 Tickets
-          
-       </p>
-       </div></div>
-     <div style={{ marginTop: 32, marginBottom: 32 }}>
-      </div>
+     </p>
+     </div></div>
+     
        <div className={style.container}> 
         <div className={style.topContent}>
           <div className={style.nftImgContainer}>
@@ -211,6 +205,7 @@ World Cup 2022 Tickets
       </div>
     
     </div>
+    
   );
 };
 

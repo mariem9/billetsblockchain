@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Header from "../components/Header"
+import Header1 from "../components/Header1"
 
 import {
   MediaRenderer,
@@ -39,7 +39,7 @@ const NFT: NextPage = () => {
   return (
     <div  className={style.wraper}>
        
-    <Header/>
+    
     
     
       <div className={styles.bg1}>
@@ -54,11 +54,7 @@ World Cup 2022 Tickets
        </p>
        </div></div></div>
        <div style={{ marginTop: 32, marginBottom: 32 }}>
-          <Link href="/create">
-            <a className={styles.mainButton} style={{ textDecoration: "none" }}>
-              Add A Ticket
-            </a>
-          </Link>
+          
         
        <div className="main">
          {

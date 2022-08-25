@@ -7,7 +7,7 @@ import { NATIVE_TOKEN_ADDRESS, TransactionResult } from "@thirdweb-dev/sdk";
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
-import Header from "../components/Header";
+import Header1 from "../components/Header1";
 
 const Create: NextPage = () => {
   // Next JS Router hook to redirect to other pages
@@ -118,8 +118,6 @@ const Create: NextPage = () => {
       <div className={styles.container}>
         {/* Form Section */}
         
-       
-    <Header/>
     
     
       <div className={styles.bg1}>
@@ -163,12 +161,12 @@ World Cup 2022 Tickets
             </label>
           </div>
 
-          {/* NFT Contract Address Field */}
+          {/* Ticket Contract Address */}
           <input
             type="text"
             name="contractAddress"
             className={styles.textInput}
-            placeholder="NFT Contract Address"
+            placeholder="Ticket Contract Address"
           />
 
           {/* NFT Token ID Field */}
@@ -176,7 +174,7 @@ World Cup 2022 Tickets
             type="text"
             name="tokenId"
             className={styles.textInput}
-            placeholder="NFT Token ID"
+            placeholder="Ticket ID"
           />
 
           {/* Sale Price For Listing Field */}
